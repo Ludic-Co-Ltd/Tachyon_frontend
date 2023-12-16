@@ -6,7 +6,6 @@ import Input from "../../components/form/Input";
 export default () => {
   return (
     <section className="">
-			<Header />
       mypage
     </section>
   )

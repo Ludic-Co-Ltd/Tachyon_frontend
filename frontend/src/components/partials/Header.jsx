@@ -17,7 +17,7 @@ export default () => {
 						<Cog6ToothIcon className="w-10 text-primary"/>
           </div>
         </div>
-    </nav>
-</header>
+      </nav>
+		</header>
   )
 }
