@@ -7,7 +7,7 @@ export default (props) => {
 
   return (
     <Link to={link}>
-      <div className="flex justify-end pe-5 text-sm">
+      <div className="flex justify-end pe-5 text-sm text-primary">
         {title}
         <ChevronDoubleRightIcon className="w-4 h-5 ps-1" />
       </div>

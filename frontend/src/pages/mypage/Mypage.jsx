@@ -12,12 +12,12 @@ export default () => {
         <Heading title="マイページ" />
 				<div className="bg-white shadow-md flex">
 					<img src={Account} alt="" className="p-5 h-40" />
-          <div className="text-primary my-4 ps-3 w-full">
+          <div className="my-4 ps-3 w-full">
             <div className="font-bold text-xl">aaaaa</div>
             <div className="text-xl">aaaaa</div>
             <div className="text-xl">aaaaa</div>
             <div className="text-xl">aaaaa</div>
-            <LinkButton link={Paths.mypage} title="プロフィール編集" />
+            <LinkButton link={Paths.editProfile} title="プロフィール編集" />
           </div>
 				</div>
       </div>
