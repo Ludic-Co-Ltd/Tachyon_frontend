@@ -12,8 +12,12 @@ import Information from "../pages/selection/Information";
 import Solution from "../pages/selection/Solution";
 import ShowEvent from "../pages/event/ShowEvent";
 import ShowCaseStudy from "../pages/case_study/ShowCaseStudy";
+import CaseStudyHistories from "../pages/case_study/CaseStudyHistories";
 import ShowCompany from "../pages/company/ShowCompany";
 import ShowMenter from "../pages/menter/ShowMenter";
+import EntrySheetCorrection from "../pages/entry_sheet/EntrySheetCorrection";
+import CaseStudyCorrection from "../pages/case_study/CaseStudyCorrection";
+import Purchase from "../pages/tickets/Purchase";
 
 import AdminDashboard from "../pages/dashboard/AdminDashboard";
 import AdminLogin from "../pages/auth/AdminLogin";
@@ -103,6 +107,38 @@ export const Routing = () => {
           element={
             <PrivateRoute path={Paths.showMenter}>
               <ShowMenter />
+            </PrivateRoute>
+          }
+        />
+        <Route
+          path={Paths.caseStudyHistory}
+          element={
+            <PrivateRoute path={Paths.caseStudyHistory}>
+              <CaseStudyHistories />
+            </PrivateRoute>
+          }
+        />
+        <Route
+          path={Paths.entrySheetCorrection}
+          element={
+            <PrivateRoute path={Paths.entrySheetCorrection}>
+              <EntrySheetCorrection />
+            </PrivateRoute>
+          }
+        />
+        <Route
+          path={Paths.caseStudyCorrection}
+          element={
+            <PrivateRoute path={Paths.caseStudyCorrection}>
+              <CaseStudyCorrection />
+            </PrivateRoute>
+          }
+        />
+        <Route
+          path={Paths.ticketPurchase}
+          element={
+            <PrivateRoute path={Paths.ticketPurchase}>
+              <Purchase />
             </PrivateRoute>
           }
         />

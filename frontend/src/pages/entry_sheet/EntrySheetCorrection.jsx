@@ -2,23 +2,21 @@ import React, { useState, useEffect } from "react";
 import Heading from "../../components/partials/Heading";
 import Button from "../../components/button/Button";
 import DropzoneFile from "../../components/form/DropzoneFile";
+import MypageForm from "../../features/mypage/MypageForm";
 
 export default () => {
   return (
     <section className="">
 			<div className="">
-        <Heading title="ケースチャレンジ" />
+        <Heading title="ES添削" />
       </div>
 			<div className="my-4 bg-white">
-				<h5 className="text-primary font-bold p-2 text-center">イベント資料</h5>
-				<div className="mx-5">
-					<div className="text-primary font-bold text-sm mt-3">ケース時思考時間</div>
-					<p>3分</p>
-					<div className="text-primary font-bold text-sm mt-3">出題企業</div>
-					<p>デロイトトーマツコンサルティング</p>
-				</div>
-				<div className="p-6">
-					<DropzoneFile />
+				<div className="p-5">
+					<MypageForm name="name" label="企業名" type="text" />
+					<MypageForm name="name" label="期間" type="text" />
+					<div className="">
+						<DropzoneFile />
+					</div>
 				</div>
       </div>
 			<div className="flex flex-wrap justify-center gap-5 my-4">

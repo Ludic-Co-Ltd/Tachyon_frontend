@@ -8,8 +8,12 @@ export const Paths = {
 	selectionSolution: "/selection/solution",
 	showEvent: "/events/:id",
 	showCaseStudy: "/case/studies/:id",
+	caseStudyHistory: "/case/studies/history",
+	caseStudyCorrection: "/case/studies/correction",
 	showCompany: "/companies/:id",
 	showMenter: "/menters/:id",
+	entrySheetCorrection: "/entry/sheets/correction",
+	ticketPurchase: "/tickets/purchase",
 
 	// admin path
 	adminLogin: "/admin/login",
