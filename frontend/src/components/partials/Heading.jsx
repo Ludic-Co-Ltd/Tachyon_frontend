@@ -4,9 +4,9 @@ import Logo from './../../assets/images/logo.png';
 import { Cog6ToothIcon, BellIcon } from '@heroicons/react/24/outline';
 
 export default (props) => {
-	const { title } = props
+	const { title, className } = props
 
   return (
-    <h1 className="text-primary text-xl font-bold p-4">{title}</h1>
+    <h1 className={`text-primary text-xl font-bold p-4 ${className}`}>{title}</h1>
   )
 }

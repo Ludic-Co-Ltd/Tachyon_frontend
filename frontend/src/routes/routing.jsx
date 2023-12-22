@@ -10,6 +10,11 @@ import Reservation from "../pages/reservation/Reservation";
 import Dashboard from "../pages/dashboard/Dashboard";
 import Information from "../pages/selection/Information";
 import Solution from "../pages/selection/Solution";
+import ShowEvent from "../pages/event/ShowEvent";
+import ShowCaseStudy from "../pages/case_study/ShowCaseStudy";
+import ShowCompany from "../pages/company/ShowCompany";
+import ShowMenter from "../pages/menter/ShowMenter";
+
 import AdminDashboard from "../pages/dashboard/AdminDashboard";
 import AdminLogin from "../pages/auth/AdminLogin";
 import Mentees from "../pages/mentee/Mentees";
@@ -66,6 +71,38 @@ export const Routing = () => {
           element={
             <PrivateRoute path={Paths.selectionSolution}>
               <Solution />
+            </PrivateRoute>
+          }
+        />
+        <Route
+          path={Paths.showEvent}
+          element={
+            <PrivateRoute path={Paths.showEvent}>
+              <ShowEvent />
+            </PrivateRoute>
+          }
+        />
+        <Route
+          path={Paths.showCaseStudy}
+          element={
+            <PrivateRoute path={Paths.showCaseStudy}>
+              <ShowCaseStudy />
+            </PrivateRoute>
+          }
+        />
+        <Route
+          path={Paths.showCompany}
+          element={
+            <PrivateRoute path={Paths.showCompany}>
+              <ShowCompany />
+            </PrivateRoute>
+          }
+        />
+        <Route
+          path={Paths.showMenter}
+          element={
+            <PrivateRoute path={Paths.showMenter}>
+              <ShowMenter />
             </PrivateRoute>
           }
         />
