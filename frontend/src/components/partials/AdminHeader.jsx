@@ -30,9 +30,9 @@ export default () => {
               <Content title="ダッシュボード" link={Paths.adminDashboard} />
               <Content title="メンティー" link={Paths.adminMentees} />
 							<Content title="メンター" link={Paths.adminMenters} />
-							<Content title="イベント" link={Paths.adminDashboard} />
-							<Content title="ケース" link={Paths.adminDashboard} />
-							<Content title="ES" link={Paths.adminDashboard} />
+							<Content title="イベント" link={Paths.adminEvents} />
+							<Content title="ケース" link={Paths.adminCaseStudies} />
+							<Content title="ES" link={Paths.adminEntrySheets} />
 							<Content title="選考情報" link={Paths.adminDashboard} />
 							<Content title="コラム" link={Paths.adminDashboard} />
             </ul>

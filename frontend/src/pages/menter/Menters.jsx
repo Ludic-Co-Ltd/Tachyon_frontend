@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from "react";
-import '../../assets/scss/auth/login.scss';
+import { useNavigate  } from "react-router-dom";
 import Heading from "../../components/partials/Heading";
 import {Table, Thead} from "../../components/partials/Table";
 import Button from "../../components/button/Button";
+import { Paths } from "../../config/Paths";
 
 export default () => {
+  const navigate = useNavigate();
   const tableData = {
     name: '黒木',
     product_name: 'スタンダード',
@@ -16,8 +18,17 @@ export default () => {
 
   return (
     <section className="mx-4">
-      <div className="">
-        <Heading title="メンター" />
+      <div className="flex justify-between">
+        <Heading title="メンター" className="mt-4" />
+        <div className="flex flex-wrap justify-end m-5">
+          <Button
+            title="新規登録"
+            bgColor="bg-green-500"
+            bgColorHover="bg-gray-800"
+            className="px-5 py-2.5 rounded-lg"
+            onClick={() => navigate(Paths.adminRegisterMenter)}
+          />
+        </div>
       </div>
 			<div className="my-5">
         <Table>

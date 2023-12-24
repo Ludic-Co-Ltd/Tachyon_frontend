@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate  } from "react-router-dom";
-import '../../assets/scss/auth/login.scss';
 import Heading from "../../components/partials/Heading";
 import {Table, Thead} from "../../components/partials/Table";
 import Button from "../../components/button/Button";
@@ -20,14 +19,14 @@ export default () => {
   return (
     <section className="mx-4">
       <div className="flex justify-between">
-        <Heading title="メンティー" className="mt-4" />
+        <Heading title="ES" className="mt-4" />
         <div className="flex flex-wrap justify-end m-5">
           <Button
             title="新規登録"
             bgColor="bg-green-500"
             bgColorHover="bg-gray-800"
             className="px-5 py-2.5 rounded-lg"
-            onClick={() => navigate(Paths.adminRegisterMentee)}
+            onClick={() => navigate(Paths.adminRegisterMenter)}
           />
         </div>
       </div>
@@ -53,13 +52,7 @@ export default () => {
                   <td className="px-6 py-4">{tableData.status}</td>
                   <td className="px-6 py-4">{tableData.date}</td>
 									<td className="px-6 py-4">
-										<Button 
-                      title="編集"
-                      bgColor="bg-gray-700"
-                      bgColorHover="bg-gray-900"
-                      className="px-5 py-2.5 rounded-lg"
-                      onClick={() => navigate(Paths.adminEditMentee.replace(':id', number + 1))}
-                    />
+										<Button title="編集" bgColor="bg-gray-700" bgColorHover="bg-gray-900" className="px-5 py-2.5 rounded-lg" />
 									</td>
                 </tr>
               )

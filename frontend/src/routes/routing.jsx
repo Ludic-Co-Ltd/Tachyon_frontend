@@ -22,7 +22,14 @@ import Purchase from "../pages/tickets/Purchase";
 import AdminDashboard from "../pages/dashboard/AdminDashboard";
 import AdminLogin from "../pages/auth/AdminLogin";
 import Mentees from "../pages/mentee/Mentees";
+import EditMentee from "../pages/mentee/EditMentee";
+import RegisterMentee from "../pages/mentee/RegisterMentee";
 import Menters from "../pages/menter/Menters";
+import EditMenter from "../pages/menter/EditMenter";
+import RegisterMenter from "../pages/menter/RegisterMenter";
+import Events from "../pages/event/Events";
+import EntrySheets from "../pages/entry_sheet/EntrySheets";
+import CaseStudies from "../pages/case_study/CaseStudies";
 
 export const Routing = () => {
   return (
@@ -163,6 +170,62 @@ export const Routing = () => {
           element={
             <AdminPrivateRoute path={Paths.adminMenters}>
               <Menters />
+            </AdminPrivateRoute>
+          }
+        />
+        <Route
+          path={Paths.adminEditMentee}
+          element={
+            <AdminPrivateRoute path={Paths.adminEditMentee}>
+              <EditMentee />
+            </AdminPrivateRoute>
+          }
+        />
+        <Route
+          path={Paths.adminRegisterMentee}
+          element={
+            <AdminPrivateRoute path={Paths.adminRegisterMentee}>
+              <RegisterMentee />
+            </AdminPrivateRoute>
+          }
+        />
+        <Route
+          path={Paths.adminEditMenter}
+          element={
+            <AdminPrivateRoute path={Paths.adminEditMenter}>
+              <EditMenter />
+            </AdminPrivateRoute>
+          }
+        />
+        <Route
+          path={Paths.adminRegisterMenter}
+          element={
+            <AdminPrivateRoute path={Paths.adminRegisterMenter}>
+              <RegisterMenter />
+            </AdminPrivateRoute>
+          }
+        />
+        <Route
+          path={Paths.adminEvents}
+          element={
+            <AdminPrivateRoute path={Paths.adminEvents}>
+              <Events />
+            </AdminPrivateRoute>
+          }
+        />
+        <Route
+          path={Paths.adminCaseStudies}
+          element={
+            <AdminPrivateRoute path={Paths.adminCaseStudies}>
+              <CaseStudies />
+            </AdminPrivateRoute>
+          }
+        />
+        <Route
+          path={Paths.adminEntrySheets}
+          element={
+            <AdminPrivateRoute path={Paths.adminEntrySheets}>
+              <EntrySheets />
             </AdminPrivateRoute>
           }
         />
