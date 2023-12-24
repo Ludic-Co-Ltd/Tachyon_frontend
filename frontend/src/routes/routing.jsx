@@ -30,6 +30,12 @@ import RegisterMenter from "../pages/menter/RegisterMenter";
 import Events from "../pages/event/Events";
 import EntrySheets from "../pages/entry_sheet/EntrySheets";
 import CaseStudies from "../pages/case_study/CaseStudies";
+import EditCaseStudy from "../pages/case_study/EditCaseStudy";
+import CreateCaseStudy from "../pages/case_study/CreateCaseStudy";
+import CreateEvent from "../pages/event/CreateEvent";
+import EditEvent from "../pages/event/EditEvent";
+import EditEntrySheet from "../pages/entry_sheet/EditEntrySheet";
+import CreateEntrySheet from "../pages/entry_sheet/CreateEntrySheet";
 
 export const Routing = () => {
   return (
@@ -226,6 +232,54 @@ export const Routing = () => {
           element={
             <AdminPrivateRoute path={Paths.adminEntrySheets}>
               <EntrySheets />
+            </AdminPrivateRoute>
+          }
+        />
+        <Route
+          path={Paths.adminCreateEvent}
+          element={
+            <AdminPrivateRoute path={Paths.adminCreateEvent}>
+              <CreateEvent />
+            </AdminPrivateRoute>
+          }
+        />
+        <Route
+          path={Paths.adminEditEvent}
+          element={
+            <AdminPrivateRoute path={Paths.adminEditEvent}>
+              <EditEvent />
+            </AdminPrivateRoute>
+          }
+        />
+        <Route
+          path={Paths.adminCreateCaseStudy}
+          element={
+            <AdminPrivateRoute path={Paths.adminCreateCaseStudy}>
+              <CreateCaseStudy />
+            </AdminPrivateRoute>
+          }
+        />
+        <Route
+          path={Paths.adminEditCaseStudy}
+          element={
+            <AdminPrivateRoute path={Paths.adminEditCaseStudy}>
+              <EditCaseStudy />
+            </AdminPrivateRoute>
+          }
+        />
+        <Route
+          path={Paths.adminEditEntrySheet}
+          element={
+            <AdminPrivateRoute path={Paths.adminEditEntrySheet}>
+              <EditEntrySheet />
+            </AdminPrivateRoute>
+          }
+        />
+        <Route
+          path={Paths.adminCreateEntrySheet}
+          element={
+            <AdminPrivateRoute path={Paths.adminCreateEntrySheet}>
+              <CreateEntrySheet />
             </AdminPrivateRoute>
           }
         />

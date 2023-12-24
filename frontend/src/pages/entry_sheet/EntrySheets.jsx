@@ -26,7 +26,7 @@ export default () => {
             bgColor="bg-green-500"
             bgColorHover="bg-gray-800"
             className="px-5 py-2.5 rounded-lg"
-            onClick={() => navigate(Paths.adminRegisterMenter)}
+            onClick={() => navigate(Paths.adminCreateEntrySheet)}
           />
         </div>
       </div>
@@ -52,7 +52,13 @@ export default () => {
                   <td className="px-6 py-4">{tableData.status}</td>
                   <td className="px-6 py-4">{tableData.date}</td>
 									<td className="px-6 py-4">
-										<Button title="編集" bgColor="bg-gray-700" bgColorHover="bg-gray-900" className="px-5 py-2.5 rounded-lg" />
+										<Button
+                      title="編集"
+                      bgColor="bg-gray-700"
+                      bgColorHover="bg-gray-900"
+                      className="px-5 py-2.5 rounded-lg"
+                      onClick={() => navigate(Paths.adminEditEntrySheet.replace(':id', number + 1))}
+                    />
 									</td>
                 </tr>
               )
