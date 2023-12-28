@@ -19,7 +19,16 @@ export default () => {
   return (
     <section className="mx-4">
       <div className="flex justify-between">
-        <Heading title="ES" className="mt-4" />
+        <Heading title="コラム" className="mt-4" />
+        <div className="flex flex-wrap justify-end m-5">
+          <Button
+            title="新規登録"
+            bgColor="bg-green-500"
+            bgColorHover="bg-gray-800"
+            className="px-5 py-2.5 rounded-lg"
+            onClick={() => navigate(Paths.adminCreateArticle)}
+          />
+        </div>
       </div>
 			<div className="my-5">
         <Table>
@@ -43,12 +52,12 @@ export default () => {
                   <td className="px-6 py-4">{tableData.status}</td>
                   <td className="px-6 py-4">{tableData.date}</td>
 									<td className="px-6 py-4">
-                    <Button
-                      title="添削"
-                      bgColor="bg-blue-500"
-                      bgColorHover="bg-blue-900"
+										<Button
+                      title="編集"
+                      bgColor="bg-gray-700"
+                      bgColorHover="bg-gray-900"
                       className="px-5 py-2.5 rounded-lg"
-                      onClick={() => navigate(Paths.adminCorrectionEntrySheet.replace(':id', number + 1))}
+                      onClick={() => navigate(Paths.adminEditArticle.replace(':id', number + 1))}
                     />
 									</td>
                 </tr>

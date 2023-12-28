@@ -34,8 +34,17 @@ import EditCaseStudy from "../pages/case_study/EditCaseStudy";
 import CreateCaseStudy from "../pages/case_study/CreateCaseStudy";
 import CreateEvent from "../pages/event/CreateEvent";
 import EditEvent from "../pages/event/EditEvent";
-import EditEntrySheet from "../pages/entry_sheet/EditEntrySheet";
-import CreateEntrySheet from "../pages/entry_sheet/CreateEntrySheet";
+import Companies from "../pages/company/Companies";
+import EditCompany from "../pages/company/EditCompany";
+import CreateCompany from "../pages/company/CreateCompany";
+import CorrectionCaseStudy from "../pages/case_study/CorrectionCaseStudy";
+import CorrectionEntrySheet from "../pages/entry_sheet/CorrectionEntrySheet";
+import Industries from "../pages/industry/Industries";
+import CreateIndustry from "../pages/industry/CreateIndustry";
+import EditIndustry from "../pages/industry/EditIndustry";
+import Articles from "../pages/article/Articles";
+import CreateArticle from "../pages/article/CreateArticle";
+import EditArticle from "../pages/article/EditArticle";
 
 export const Routing = () => {
   return (
@@ -268,18 +277,90 @@ export const Routing = () => {
           }
         />
         <Route
-          path={Paths.adminEditEntrySheet}
+          path={Paths.adminCorrectionEntrySheet}
           element={
-            <AdminPrivateRoute path={Paths.adminEditEntrySheet}>
-              <EditEntrySheet />
+            <AdminPrivateRoute path={Paths.adminCorrectionEntrySheet}>
+              <CorrectionEntrySheet />
             </AdminPrivateRoute>
           }
         />
         <Route
-          path={Paths.adminCreateEntrySheet}
+          path={Paths.adminCompanies}
           element={
-            <AdminPrivateRoute path={Paths.adminCreateEntrySheet}>
-              <CreateEntrySheet />
+            <AdminPrivateRoute path={Paths.adminCompanies}>
+              <Companies />
+            </AdminPrivateRoute>
+          }
+        />
+        <Route
+          path={Paths.adminEditCompany}
+          element={
+            <AdminPrivateRoute path={Paths.adminEditCompany}>
+              <EditCompany />
+            </AdminPrivateRoute>
+          }
+        />
+        <Route
+          path={Paths.adminCreateCompany}
+          element={
+            <AdminPrivateRoute path={Paths.adminCreateCompany}>
+              <CreateCompany />
+            </AdminPrivateRoute>
+          }
+        />
+        <Route
+          path={Paths.adminCorrectionCaseStudy}
+          element={
+            <AdminPrivateRoute path={Paths.adminCorrectionCaseStudy}>
+              <CorrectionCaseStudy />
+            </AdminPrivateRoute>
+          }
+        />
+        <Route
+          path={Paths.adminIndustries}
+          element={
+            <AdminPrivateRoute path={Paths.adminIndustries}>
+              <Industries />
+            </AdminPrivateRoute>
+          }
+        />
+        <Route
+          path={Paths.adminCreateIndustry}
+          element={
+            <AdminPrivateRoute path={Paths.adminCreateIndustry}>
+              <CreateIndustry />
+            </AdminPrivateRoute>
+          }
+        />
+        <Route
+          path={Paths.adminEditIndustry}
+          element={
+            <AdminPrivateRoute path={Paths.adminEditIndustry}>
+              <EditIndustry />
+            </AdminPrivateRoute>
+          }
+        />
+        <Route
+          path={Paths.adminArticles}
+          element={
+            <AdminPrivateRoute path={Paths.adminArticles}>
+              <Articles />
+            </AdminPrivateRoute>
+          }
+        />
+        <Route
+          path={Paths.adminCreateArticle}
+          element={
+            <AdminPrivateRoute path={Paths.adminCreateArticle}>
+              <CreateArticle />
+            </AdminPrivateRoute>
+          }
+        />
+        <Route
+          path={Paths.adminEditArticle}
+          element={
+            <AdminPrivateRoute path={Paths.adminEditArticle}>
+              <EditArticle />
             </AdminPrivateRoute>
           }
         />

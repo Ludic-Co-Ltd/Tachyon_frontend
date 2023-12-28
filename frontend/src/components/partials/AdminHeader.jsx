@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import '../../assets/scss/auth/login.scss';
 import { Cog6ToothIcon, BellIcon } from '@heroicons/react/24/outline';
 import { Paths } from "../../config/Paths";
+import Logo from './../../assets/images/logo.png';
 
 export default () => {
 	const Content = (props) => {
@@ -22,7 +23,7 @@ export default () => {
 			<nav className="bg-white border-gray-200 px-4 lg:px-6 py-5 dark:bg-gray-800">
         <div className="flex flex-wrap justify-between items-center mx-auto">
           <a href="/" className="flex items-center">
-            <img src="https://flowbite.com/docs/images/logo.svg" className="mr-3 h-6 sm:h-9" alt="Flowbite Logo" />
+            <img src={Logo} className="mr-3 h-6 sm:h-9" alt="Flowbite Logo" />
             <span className="self-center text-3xl font-semibold whitespace-nowrap text-primary">Tachyon</span>
           </a>
 					<div className="hidden justify-between items-center w-full lg:flex lg:w-auto lg:order-1" id="mobile-menu-2">
@@ -33,8 +34,9 @@ export default () => {
 							<Content title="イベント" link={Paths.adminEvents} />
 							<Content title="ケース" link={Paths.adminCaseStudies} />
 							<Content title="ES" link={Paths.adminEntrySheets} />
-							<Content title="選考情報" link={Paths.adminDashboard} />
-							<Content title="コラム" link={Paths.adminDashboard} />
+							<Content title="企業情報" link={Paths.adminCompanies} />
+							<Content title="業界情報" link={Paths.adminIndustries} />
+							<Content title="コラム" link={Paths.adminArticles} />
             </ul>
           </div>
           <div className="flex items-center lg:order-2">

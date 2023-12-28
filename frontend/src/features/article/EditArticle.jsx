@@ -7,24 +7,35 @@ import Select from "../../components/form/Select";
 import TextArea from "../../components/form/TextArea";
 
 export default () => {
+	const options = [
+		{name: 'aaa', value: 1},
+		{name: 'bbb', value: 2}
+	]
+	const reservations = [
+		{name: '仮予約', value: 1},
+		{name: '確定', value: 2},
+		{name: 'ゲリラ', value: 3}
+	]
   return (
 		<div className="grid grid-cols-12 gap-10">
 			<div className="col-span-12">
 				<Card>
 					<CardTitle title="基本情報" />
 					<div className="grid grid-cols-2 gap-10 my-3">
-						<AdminInput name="start_date" label="公開日時" type="date" />
-						<AdminInput name="end_date" label="終了日時" type="date" />
-					</div>
-					<div className="grid grid-cols-2 gap-10 my-3">
-						<AdminInput name="thinking_time" label="思考時間" type="number" />
-						<AdminInput name="name" label="企業名" type="text" />
+						<AdminInput name="title" label="題名" type="text" />
+						<AdminInput name="image" label="画像" type="file" />
 					</div>
 					<div className="grid grid-cols-1 my-3">
-						<AdminInput name="question" label="ケースお題" type="text" />
+						<AdminInput name="title" label="コラム紹介文" type="text" />
 					</div>
 					<div className="grid grid-cols-1 my-3">
-						<TextArea name="overview" label="備考" />
+						<TextArea name="overview" label="コラム内容1" />
+					</div>
+					<div className="grid grid-cols-1 my-3">
+						<AdminInput name="title" label="小見出し" type="text" />
+					</div>
+					<div className="grid grid-cols-1 my-3">
+						<TextArea name="overview" label="コラム内容2" />
 					</div>
 				</Card>
 				<div className="flex flex-wrap justify-end gap-5 my-5">

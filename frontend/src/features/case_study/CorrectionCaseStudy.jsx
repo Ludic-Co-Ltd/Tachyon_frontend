@@ -3,7 +3,6 @@ import '../../assets/scss/auth/login.scss';
 import AdminInput from "../../components/form/AdminInput";
 import { Card, CardTitle } from "../../components/partials/Card";
 import Button from "../../components/button/Button";
-import Select from "../../components/form/Select";
 import TextArea from "../../components/form/TextArea";
 
 export default () => {
@@ -12,19 +11,11 @@ export default () => {
 			<div className="col-span-12">
 				<Card>
 					<CardTitle title="基本情報" />
-					<div className="grid grid-cols-2 gap-10 my-3">
-						<AdminInput name="start_date" label="公開日時" type="date" />
-						<AdminInput name="end_date" label="終了日時" type="date" />
-					</div>
-					<div className="grid grid-cols-2 gap-10 my-3">
-						<AdminInput name="thinking_time" label="思考時間" type="number" />
-						<AdminInput name="name" label="企業名" type="text" />
+					<div className="grid grid-cols-1 my-3">
+						<TextArea name="correction_result" label="添削" rows="10" />
 					</div>
 					<div className="grid grid-cols-1 my-3">
-						<AdminInput name="question" label="ケースお題" type="text" />
-					</div>
-					<div className="grid grid-cols-1 my-3">
-						<TextArea name="overview" label="備考" />
+						<TextArea name="comment" label="コメント" rows="10" />
 					</div>
 				</Card>
 				<div className="flex flex-wrap justify-end gap-5 my-5">

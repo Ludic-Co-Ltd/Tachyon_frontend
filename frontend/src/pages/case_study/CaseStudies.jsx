@@ -52,13 +52,22 @@ export default () => {
                   <td className="px-6 py-4">{tableData.status}</td>
                   <td className="px-6 py-4">{tableData.date}</td>
 									<td className="px-6 py-4">
-										<Button
-                      title="編集"
-                      bgColor="bg-gray-700"
-                      bgColorHover="bg-gray-900"
-                      className="px-5 py-2.5 rounded-lg"
-                      onClick={() => navigate(Paths.adminEditCaseStudy.replace(':id', number + 1))}
-                    />
+                    <div className="flex gap-3">
+                      <Button
+                        title="編集"
+                        bgColor="bg-gray-700"
+                        bgColorHover="bg-gray-900"
+                        className="px-5 py-2.5 rounded-lg"
+                        onClick={() => navigate(Paths.adminEditCaseStudy.replace(':id', number + 1))}
+                      />
+                      <Button
+                        title="添削"
+                        bgColor="bg-blue-500"
+                        bgColorHover="bg-blue-900"
+                        className="px-5 py-2.5 rounded-lg"
+                        onClick={() => navigate(Paths.adminCorrectionCaseStudy.replace(':id', number + 1))}
+                      />
+                    </div>
 									</td>
                 </tr>
               )

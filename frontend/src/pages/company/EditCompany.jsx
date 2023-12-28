@@ -1,15 +1,15 @@
 import React, { useState, useEffect } from "react";
 import Heading from "../../components/partials/Heading";
-import EditEntrySheet from "../../features/entry_sheet/EditEntrySheet";
+import EditCompany from "../../features/company/EditCompany";
 
 export default () => {
   return (
     <section className="mx-4">
       <div className="">
-        <Heading title="ES編集" />
+        <Heading title="企業編集" />
       </div>
 			<div className="my-5">
-        <EditEntrySheet />
+        <EditCompany />
       </div>
     </section>
   )
